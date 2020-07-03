@@ -58,6 +58,8 @@ public class Activity2 extends Activity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.putExtra("EXIT", true);
                 startActivity(intent);
+                /*setResult(0);
+                finish();*/
             }
         });
     }
