@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -53,7 +52,6 @@ public class Activity1 extends Activity implements View.OnClickListener, DatePic
         edtPassword = (EditText) findViewById(R.id.edtPassword);
         edtRetype = (EditText) findViewById(R.id.edtRetype);
         edtBirthDate = (EditText) findViewById(R.id.edtBirthDate);
-        edtBirthDate.setInputType(InputType.TYPE_DATETIME_VARIATION_DATE);
         rbMale = (RadioButton) findViewById(R.id.rbMale);
         rbFeMale = (RadioButton) findViewById(R.id.rbFeMale);
         cbTennis = (CheckBox) findViewById(R.id.cbTennis);
@@ -128,7 +126,7 @@ public class Activity1 extends Activity implements View.OnClickListener, DatePic
         if (v.getId() == btSignup.getId()) {
             String result = validateData();
             if (!result.isEmpty()) {
-                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
             } else {
                 // Get all data.
                 Bundle bundle = new Bundle();
