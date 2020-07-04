@@ -35,20 +35,14 @@ public class Activity2 extends Activity {
         String password = myBundle.getString("password");
         String gender = myBundle.getString("gender");
         String birthdate = myBundle.getString("birthdate");
-        String hobbies[] = myBundle.getString("hobbies").split(",");
-        String hobby = "";
-        for (int i = 0; i < hobbies.length; i++) {
-            hobby += hobbies[i];
-            if (i < hobbies.length - 1)
-                hobby += ",";
-        }
+        String hobbies = myBundle.getString("hobbies");
 
         // Appending to textview.
         txtUsername.append(username);
         txtPassword.append(password);
         txtBirthdate.append(birthdate);
         txtGender.append(gender);
-        txtHobbies.append(hobby);
+        txtHobbies.append(hobbies);
 
         // Exit Activity2.
         btExit.setOnClickListener(new View.OnClickListener() {
@@ -58,8 +52,6 @@ public class Activity2 extends Activity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.putExtra("EXIT", true);
                 startActivity(intent);
-                /*setResult(0);
-                finish();*/
             }
         });
     }
