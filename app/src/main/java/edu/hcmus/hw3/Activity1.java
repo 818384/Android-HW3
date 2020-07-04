@@ -90,7 +90,7 @@ public class Activity1 extends Activity implements View.OnClickListener {
         for (int i = 0; i < errors.size(); i++) {
             result += errors.get(i);
             if (i < errors.size() - 1)
-                result += ",";
+                result += System.lineSeparator();
         }
 
         return result;

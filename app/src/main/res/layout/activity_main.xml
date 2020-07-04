@@ -3,240 +3,245 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/mainLayout"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="100px"
-        tools:context=".Activity1">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mainLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="100px"
+            tools:context=".Activity1">
 
-            <TextView
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/username"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/edtUsername"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/username" />
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username" />
 
-            <TextView
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/password"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/edtPassword"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
-                android:inputType="textPassword" />
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
 
-            <TextView
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/retype"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/edtRetype"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/retype"
-                android:inputType="textPassword" />
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retype"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtRetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/retype"
+                    android:inputType="textPassword" />
 
-            <TextView
-                android:layout_width="@dimen/textview_width"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="date"
-                android:text="@string/birthdate"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:text="@string/birthdate"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-
-            <EditText
-                android:id="@+id/edtBirthDate"
-                android:layout_width="200dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/birthdate" />
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btSelect"
-                android:layout_width="@dimen/textview_width"
+
+                <EditText
+                    android:id="@+id/edtBirthDate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/birthdate" />
+
+                <Button
+                    android:id="@+id/btSelect"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="Select"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Select"></Button>
-        </LinearLayout>
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/gender"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioGroup
-                android:id="@+id/rbgGender"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/rbMale"
+                <RadioGroup
+                    android:id="@+id/rbgGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbFeMale"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female">
+
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
                     android:layout_width="@dimen/textview_width"
                     android:layout_height="wrap_content"
-                    android:text="@string/male">
+                    android:text="@string/hobbies"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                </RadioButton>
+            </LinearLayout>
 
-                <RadioButton
-                    android:id="@+id/rbFeMale"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbTennis"
                     android:layout_width="@dimen/textview_width"
                     android:layout_height="wrap_content"
-                    android:text="@string/female">
+                    android:text="@string/tennis">
 
-                </RadioButton>
-            </RadioGroup>
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/cbFutbal"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/futbal">
+
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/cbOthers"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/others">
+
+                </CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btReset"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reset">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btSignup"
+
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup">
+
+                </Button>
+            </LinearLayout>
+
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/hobbies"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/cbTennis"
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/tennis">
-
-            </CheckBox>
-
-            <CheckBox
-                android:id="@+id/cbFutbal"
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/futbal">
-
-            </CheckBox>
-
-            <CheckBox
-                android:id="@+id/cbOthers"
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/others">
-
-            </CheckBox>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/btReset"
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/reset">
-
-            </Button>
-
-            <Button
-                android:id="@+id/btSignup"
-
-                android:layout_width="@dimen/textview_width"
-                android:layout_height="wrap_content"
-                android:text="@string/signup">
-
-            </Button>
-        </LinearLayout>
-
-    </LinearLayout>
+    </HorizontalScrollView>
 </ScrollView>
 
