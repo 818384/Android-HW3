@@ -37,7 +37,7 @@ public class Activity2 extends Activity {
         String birthdate = myBundle.getString("birthdate");
         String hobbies[] = myBundle.getString("hobbies").split(",");
         String hobby = "";
-        for (int i = 0; i < hobbies.length; i++){
+        for (int i = 0; i < hobbies.length; i++) {
             hobby += hobbies[i];
             if (i < hobbies.length - 1)
                 hobby += ",";
