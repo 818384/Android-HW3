@@ -44,9 +44,6 @@ public class Activity1 extends Activity implements View.OnClickListener, DatePic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (getIntent().getBooleanExtra("EXIT", false)) {
-            finish();
-        }
         df.setLenient(false);
         edtUsername = (EditText) findViewById(R.id.edtUsername);
         edtPassword = (EditText) findViewById(R.id.edtPassword);
